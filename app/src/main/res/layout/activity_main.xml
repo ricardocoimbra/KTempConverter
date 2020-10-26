@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valorTemp"
+        android:hint="@string/digite_a_temperatura"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius"
+            android:id="@+id/celciusRadio"
+            android:checked="false"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fahreinheit"
+            android:id="@+id/fahreinheitRadio"
+            android:checked="true"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/converterButton"
+        android:text="@string/converter_temperatura"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
